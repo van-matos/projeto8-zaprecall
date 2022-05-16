@@ -1,23 +1,20 @@
 import ReactDOM from 'react-dom';
+import Home from './Home';
+import Cards from './Cards';
+
 import "./reset.css";
 import "./style.css";
 
-import logo from "./images/logo.png"
+import logo from "./images/logo.png";
 
-function Home() {
+function App() {
     return (
-        <>
-            <div class="main">
-                <img class="logo" src={logo} alt="Logo"/>
-                <div class="title">
-                    ZapRecall
-                </div>
-                <div class="launch">
-                    Iniciar Recall!
-                </div>
-            </div>
+        <> 
+            <Home />
+            <Cards />
         </>
+        
     )
 }
 
-ReactDOM.render(<Home />, document.querySelector('.root'));
+ReactDOM.render(<App />, document.querySelector('.root'));
