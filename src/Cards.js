@@ -27,7 +27,7 @@ export default function Cards() {
                     }
                 </div>
                 <div className="footer">
-                    0/4 CONCLUÍDOS
+                    0/{flashcards.length} CONCLUÍDOS
                 </div>
             </div>
         </>

@@ -3,12 +3,12 @@ import logo from "./images/logo.png"
 export default function Home() {
     return (
         <>
-            <div class="main">
-                <img class="logo" src={logo} alt="Logo"/>
-                <div class="title">
+            <div className="main">
+                <img className="logo" src={logo} alt="Logo"/>
+                <div className="title">
                     ZapRecall
                 </div>
-                <div class="launch">
+                <div className="launch">
                     Iniciar Recall!
                 </div>
             </div>
