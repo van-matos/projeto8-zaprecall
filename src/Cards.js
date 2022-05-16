@@ -1,6 +1,8 @@
 import logo from "./images/logo.png"
 
 export default function Cards() {
+    const perguntas = ["Pergunta 1", "Pergunta 2", "Pergunta 3", "Pergunta 4"]
+    
     return (
         <>
             <div class="cards">
@@ -9,22 +11,11 @@ export default function Cards() {
                     <div class="titleHeader">ZapRecall</div>
                 </div>
                 <div class="content">
-                    <div class="pergunta">
-                        Pergunta 1
-                        <ion-icon name="play-outline"></ion-icon>
-                    </div>
-                    <div class="pergunta">
-                        Pergunta 2
-                        <ion-icon name="play-outline"></ion-icon>
-                    </div>
-                    <div class="pergunta">
-                        Pergunta 3
-                        <ion-icon name="play-outline"></ion-icon>
-                    </div>
-                    <div class="pergunta">
-                        Pergunta 4
-                        <ion-icon name="play-outline"></ion-icon>
-                    </div>
+                    {perguntas.map(pergunta => <div class="pergunta">
+                            {pergunta}
+                            <ion-icon name="play-outline"></ion-icon>
+                        </div>)
+                    }
                 </div>
                 <div class="footer">
                     0/4 CONCLUÍDOS
